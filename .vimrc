@@ -19,6 +19,7 @@ set showmode
 set showmatch
 set hlsearch
 set history=1000
+set hidden
 
 set vb t_vb=
 set noerrorbells
@@ -39,7 +40,14 @@ set pastetoggle=<F2>
 nnoremap <silent> <leader>' :nohlsearch<CR>
 nnoremap <space> :
 
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
+highlight Comment cterm=italic
+let g:gruvbox_italic=1
+let g:gruvbox_underline=0
+
 autocmd Filetype html setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd vimenter * ++nested colorscheme gruvbox
 
 if version >= 703
     set undodir=~/.vim/backup
@@ -48,7 +56,7 @@ if version >= 703
 endif
 
 set number
-
+set background=dark
 set ruler
 
 augroup numbertoggle
