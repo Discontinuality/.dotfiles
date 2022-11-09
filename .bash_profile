@@ -1,3 +1,4 @@
+alias ls='ls -G'
 alias lr='ls -hartl '
 alias g='grep -i '
 alias get='curl -OL '

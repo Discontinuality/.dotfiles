@@ -22,6 +22,7 @@ set history=1000
 
 set vb t_vb=
 set noerrorbells
+set hidden
 
 nnoremap <leader>s :set spell!<CR>
 
@@ -38,7 +39,14 @@ set pastetoggle=<F2>
 
 nnoremap <silent> <leader>' :nohlsearch<CR>
 nnoremap <space> :
+nnoremap <leader>s :set spell!<CR>
 
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
+let g:gruvbox_italic=1
+let g:gruvbox_underline = '0'
+
+autocmd vimenter * ++nested colorscheme gruvbox
 autocmd Filetype html setlocal tabstop=2 shiftwidth=2 expandtab
 
 if version >= 703
@@ -48,7 +56,7 @@ if version >= 703
 endif
 
 set number
-
+set background=dark
 set ruler
 
 augroup numbertoggle
