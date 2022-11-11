@@ -65,6 +65,7 @@ Plug 'mattn/emmet-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/fzf'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
