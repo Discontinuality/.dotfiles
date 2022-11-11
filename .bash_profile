@@ -4,6 +4,7 @@ alias g='grep -i '
 alias get='curl -OL '
 PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+export PATH="~/bin:$PATH"
 PS1='[\W]\$ '
 # Git configuration
 # Branch name in prompt
