@@ -44,11 +44,6 @@ nnoremap <leader>s :set spell!<CR>
 
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
-let g:gruvbox_italic=1
-let g:gruvbox_underline = '0'
-
-let &t_ZH="\e[3m"
-let &t_ZR="\e[23m"
 highlight Comment cterm=italic
 let g:gruvbox_italic=1
 let g:gruvbox_underline=0
@@ -62,6 +57,8 @@ Plug 'mattn/emmet-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf'
 Plug 'tpope/vim-fugitive'
+Plug 'alvan/vim-closetag'
+Plug 'AndrewRadev/tagalong.vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
