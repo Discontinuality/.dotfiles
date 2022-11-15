@@ -10,16 +10,26 @@ syntax on
 set noswapfile
 set nobackup
 
+set backspace=2
+
 set nowrap
 set incsearch
 set ignorecase
 set smartcase
 
+set showcmd
 set showmode
 set showmatch
 set hlsearch
 set history=1000
 set hidden
+
+set splitbelow
+set splitright
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 
 set vb t_vb=
 set noerrorbells
@@ -40,13 +50,14 @@ set pastetoggle=<F2>
 
 nnoremap <silent> <leader>' :nohlsearch<CR>
 nnoremap <space> :
-nnoremap <leader>s :set spell!<CR>
+nnoremap <silent> <leader>s :set spell!<CR>
 
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 highlight Comment cterm=italic
 let g:gruvbox_italic=1
 let g:gruvbox_underline=0
+let g:user_emmet_leader_key=','
 
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
@@ -58,6 +69,7 @@ Plug 'junegunn/fzf'
 Plug 'tpope/vim-fugitive'
 Plug 'alvan/vim-closetag'
 Plug 'AndrewRadev/tagalong.vim'
+Plug 'tamago324/vim-browsersync'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
