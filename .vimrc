@@ -70,6 +70,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'alvan/vim-closetag'
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'tamago324/vim-browsersync'
+Plug 'tyru/open-browser.vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
