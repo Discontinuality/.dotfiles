@@ -2,6 +2,7 @@ alias ls='ls -G'
 alias lr='ls -hartl '
 alias g='grep -i '
 alias get='curl -OL '
+alias bs='browser-sync start --server -f -w'
 PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 export PATH="~/bin:$PATH"

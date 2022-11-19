@@ -36,6 +36,10 @@ set noerrorbells
 set hidden
 
 nnoremap <leader>s :set spell!<CR>
+nnoremap <leader>bs :BrowserSyncStart<CR>
+nnoremap <leader>bo :BrowserSyncOpen<CR>
+nnoremap <leader>be :BrowserSyncStop<CR>
+
 
 set wildmenu
 set wildmode=list:longest
