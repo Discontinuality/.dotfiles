@@ -47,8 +47,8 @@ set wildmode=list:longest
 
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set expandtab
 
 set pastetoggle=<F2>
@@ -82,8 +82,6 @@ Plug 'tpope/vim-repeat'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
-autocmd Filetype html setlocal tabstop=2 shiftwidth=2 expandtab
-autocmd Filetype javascript setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd vimenter * ++nested colorscheme gruvbox
 
 if version >= 703
