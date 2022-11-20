@@ -40,6 +40,7 @@ nnoremap <leader>bs :BrowserSyncStart<CR>
 nnoremap <leader>bo :BrowserSyncOpen<CR>
 nnoremap <leader>be :BrowserSyncStop<CR>
 
+nnoremap K i<CR><Esc>
 
 set wildmenu
 set wildmode=list:longest
