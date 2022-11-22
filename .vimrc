@@ -36,7 +36,7 @@ set noerrorbells
 set hidden
 
 nnoremap <leader>s :set spell!<CR>
-nnoremap <leader>bs :BrowserSyncStart<CR>
+nnoremap <leader>bs :BrowserSyncStart<CR> :BrowserSyncOpen<CR>
 nnoremap <leader>bo :BrowserSyncOpen<CR>
 nnoremap <leader>be :BrowserSyncStop<CR>
 
