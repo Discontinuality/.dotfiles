@@ -30,7 +30,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
-nnoremap <F5> :buffers<CR>:buffer<Space>
+nnoremap <leader>f :buffers<CR>:buffer<Space>
 
 set vb t_vb=
 set noerrorbells
