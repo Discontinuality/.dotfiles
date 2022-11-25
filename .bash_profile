@@ -1,4 +1,4 @@
-source .bashrc
+source ~/.bashrc
 alias ls='ls -G'
 alias lr='ls -hartl '
 alias g='grep -i '
@@ -16,3 +16,4 @@ PS1='[\W$(__git_ps1 " (%s)")]\$ '
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"' # Tab completion for branch names
 source ~/.git-completion.bash
 eval "$(rbenv init -)"
+export BASH_SILENCE_DEPRECATION_WARNING=1
