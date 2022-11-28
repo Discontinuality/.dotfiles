@@ -17,3 +17,9 @@ export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"' # Tab completion f
 source ~/.git-completion.bash
 eval "$(rbenv init -)"
 export BASH_SILENCE_DEPRECATION_WARNING=1
+export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion || {
+    # if not found in /usr/local/etc, try the brew --prefix location
+    [ -f "$(brew --prefix)/etc/bash_completion.d/git-completion.bash" ] && \
+        . $(brew --prefix)/etc/bash_completion.d/git-completion.bash
+}
