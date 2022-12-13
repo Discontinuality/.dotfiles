@@ -4,7 +4,8 @@ alias lr='ls -hartl '
 alias g='grep -i '
 alias get='curl -OL '
 alias bs='browser-sync start --server -f -w'
-alias jb='bundle _2.2.17_ exec jekyll serve'
+alias jb='bundle _2.2.17_ exec jekyll serve --host 0.0.0.0 --livereload'
+alias dots='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 export PATH="~/bin:$PATH"

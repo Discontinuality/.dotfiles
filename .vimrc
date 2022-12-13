@@ -30,7 +30,10 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
-nnoremap <leader>f :buffers<CR>:buffer<Space>
+nnoremap <leader>f :Buffer<CR>
+
+nnoremap n nzz
+nnoremap N Nzz
 
 set vb t_vb=
 set noerrorbells
@@ -71,7 +74,8 @@ call plug#begin('~/.vim/plugged')
 " Declare the list of plugins.
 Plug 'mattn/emmet-vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', {'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'alvan/vim-closetag'
 Plug 'AndrewRadev/tagalong.vim'
@@ -79,11 +83,14 @@ Plug 'tamago324/vim-browsersync'
 Plug 'tyru/open-browser.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'junegunn/goyo.vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
 autocmd vimenter * ++nested colorscheme gruvbox
+
+let g:fzf_layout = { 'down': '40%' }
 
 if version >= 703
     set undodir=~/.vim/backup
